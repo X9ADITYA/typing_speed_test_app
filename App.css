@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.typing-test {
+  width: 90%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.typing-test:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Section */
+.text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  border-left: 5px solid #8ec5fc;
+  padding-left: 15px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.text:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background: #fefefe;
+  line-height: 1.5;
+  overflow-y: auto;
+}
+
+textarea:hover {
+  box-shadow: 0 4px 8px rgba(142, 197, 252, 0.4);
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #8ec5fc;
+  box-shadow: 0 0 8px rgba(142, 197, 252, 0.6);
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stats:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stats p {
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* Restart Button */
+button {
+  background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #8ec5fc, #a1c4fd);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats p {
+    margin-bottom: 10px;
+  }
+}
+.stats p:last-child {
+  color: #4caf50; /* Green color for a positive feel */
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.stats p:last-child:hover {
+  color: #2e7d32; /* Darker green on hover */
+  transform: scale(1.1);
+}
